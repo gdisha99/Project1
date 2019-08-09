@@ -11,22 +11,58 @@
 </head>
 <body>
     <div id="main-container-div">
-        <div class="header">
-                                
-            <!-- Insert code for Sign Up, Sign In button here. 
-                 Add code for "ScriBBler" heading and the sub-heading -->
-
+        <div class="header">                                
+            <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <input id="myBtn1" class="topButtons" type="button" value="Sign Up">
+            <input id="myBtn2" class="topButtons" type="button" value="Sign In">
+            <a id="pageTitle" class="logo-title">ScriBBler</a>
+            <p class="middleText">Explore. Imagine. Create</p>
         </div>
     </div>
+
     <div>
-
         <!-- Insert code for Sign In modal here -->
-
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Welcome Back</h2>
+            </div>
+            <div class="modal-body">
+                <form>
+                    Username<br>
+                    <input type="text" name="username" placeholder="Enter Username" required><br>
+                    Password<br>
+                    <input type="password" name="password" placeholder="Enter Password" required><br>
+                    <button type="submit">Sign In</button>
+                    <div class="signInFooter">
+                        <p style="text-align: center;"><b>Not a member? <a id="sign_up" href="#" onclick="">Sign Up</a></b></p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div>
-
         <!-- Insert code for Sign Up modal here -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Get Started</h2>
+            </div>
+            <div class="modal-body">
+                <form>
+                    Full Name<br>
+                    <input type="text" name="fullname" placeholder="Enter Full Name" required><br>
+                    Username<br>
+                    <input type="text" name="username" placeholder="Enter Username" required><br>
+                    Password<br>
+                    <input type="password" name="password" placeholder="Enter Password" required><br>
+                    Confirm Password<br>
+                    <input type="password" name="confirmpass" placeholder="Confirm Password" required><br>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
 
     </div>
 

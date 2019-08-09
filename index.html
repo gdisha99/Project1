@@ -17,36 +17,81 @@
 
         <div class="header">
         	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-            <input class="topButtons" type="button" value="Sign Up">
-            <input class="topButtons" type="button" value="Sign In">
+            <input id="myBtn1" class="topButtons" type="button" value="Sign Up">
+            <input id="myBtn2" class="topButtons" type="button" value="Sign In">
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="middleText">Explore. Imagine. Create</p>
-
         </div>
            
         <div class="postButtons">
         	<!-- Insert code for All Posts & Create Post button here -->
-            <button class="buttons">All Posts</button>
-            <button class="buttons">Create Post</button>
-
+            <button class="buttons" onclick="allPostFunction()">All Posts</button>
+            <button id="myBtn3" class="buttons">Create Post</button>
         </div>
     </div>
 
-    <div>
-
+    <div id="myModal2" class="modal">
     	<!-- Insert code for Sign In modal here -->
-
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Welcome Back</h2>
+            </div>
+            <div class="modal-body">
+                <form>
+                    Username<br>
+                    <input type="text" name="username" placeholder="Enter Username" required><br>
+                    Password<br>
+                    <input type="password" name="password" placeholder="Enter Password" required><br>
+                    <button type="submit">Sign In</button>
+                    <div class="signInFooter">
+                        <p style="text-align: center;"><b>Not a member? <a id="sign_up" href="#" onclick="">Sign Up</a></b></p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <div>
-
+    <div id="myModal1" class="modal">
     	<!-- Insert code for Sign Up modal here -->
-
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Get Started</h2>
+            </div>
+            <div class="modal-body">
+                <form>
+                    Full Name<br>
+                    <input type="text" name="fullname" placeholder="Enter Full Name" required><br>
+                    Username<br>
+                    <input type="text" name="username" placeholder="Enter Username" required><br>
+                    Password<br>
+                    <input type="password" name="password" placeholder="Enter Password" required><br>
+                    Confirm Password<br>
+                    <input type="password" name="confirmpass" placeholder="Confirm Password" required><br>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <div>
-
+    <div id="myModal3" class="modal">
     	<!-- Insert code for Create Post modal here -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>New Post</h2>
+            </div>
+            <div class="modal-body">
+                <form>
+                    Title<br>
+                    <input type="text" name="title" placeholder="Enter Post Title" required><br>
+                    Content<br>
+                    <input type="text" name="content" placeholder="Enter Post Content" required><br>
+                    <button type="submit">Create Post</button>
+                </form>
+            </div>
+        </div>
 
     </div>
 
