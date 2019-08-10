@@ -87,7 +87,7 @@ margin: 10px 10px 0px 10px;
 
 /* The Close Button */
 .close {
-  color: white;
+  color: black;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -102,14 +102,27 @@ margin: 10px 10px 0px 10px;
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+  text-align: center;
+  background-color: white;
+  color: black;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+	padding: 2px 16px;
+	color: black;
+}
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+  background-color: white;
+}
+
+h2
+{
+    border-bottom:1px solid black;
+    padding-bottom:15px;
+}
+
+span.signInFooter{
+	text-align: center;
 }
