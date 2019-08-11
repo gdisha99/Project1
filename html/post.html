@@ -85,6 +85,20 @@
 </div>
 
     <!-- Insert code for Like button, Comment button, Comment box here-->
+    <div class="Like">
+            <button id="addLike" class="addLikeComment" onclick="postLiked()"><i class="fa fa-thumbs-up "></i>&nbsp;Like</button><br>
+            <label id="likesCount" class="Likes" value="" >Be the first one to like this!</label>
+        </div>
+
+        <div class="Comments">
+            <textarea id="userComments" type="text"  placeholder="Leave a comment..."></textarea><br>
+            <button id="addComments" class="addLikecomments" onclick="addComment(userComments)">Comment</button>
+        </div>
+        <h4>All Comments</h4>
+        <div id="addEventNames">
+        
+        </div>
+    </div>
 
     <script src="..\js\post.js" defer></script>
     <script src="..\js\header.js">             
