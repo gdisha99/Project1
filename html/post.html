@@ -73,7 +73,10 @@
 
 <div class="blogAuthor">
     <!-- Insert code for Edit/Save button and  -->
-    
+    <button id="editButton" class="editSaveBtn" onclick="editContent()">Edit&nbsp;<i
+                    class="fa fa-pencil-square-o"></i></button>
+            <button id="saveButton" class="editSaveBtn" onclick="saveContent()">Save&nbsp;<i
+                    class="fa fa-floppy-o"></i></button>
 
     <p>Jimi</p>
 </div>
@@ -86,8 +89,8 @@
 
     <!-- Insert code for Like button, Comment button, Comment box here-->
     <div class="Like">
-            <button id="addLike" class="addLikeComment" onclick="postLiked()"><i class="fa fa-thumbs-up "></i>&nbsp;Like</button><br>
-            <label id="likesCount" class="Likes" value="" >Be the first one to like this!</label>
+            <button id="addLikes" class="addLikecomments" onclick="postLiked()"><i class="fa fa-thumbs-up "></i>&nbsp;Like</button><br>
+            <label id="likeCount" class="Likes" value="" >Be the first one to like this!</label>
         </div>
 
         <div class="Comments">

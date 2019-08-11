@@ -31,22 +31,12 @@ btn4.onclick = function() {
 // span3.onclick = function() {
 //   modal3.style.display = "none";
 // }
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal1.style.display = "none";
-//   }
-// }
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal2.style.display = "none";
-//   }
-// }
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal3.style.display = "none";
-//   }
-// }
 
+window.addEventListener('click' , function(event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+});
 function allPostFunction(){
 	window.location.href = "html/bloglist.html";
 }

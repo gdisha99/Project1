@@ -20,25 +20,27 @@ btn3.onclick = function() {
 
 span1.onclick = function() {
   modal1.style.display = "none";
+document.getElementById("id_3").innerHTML = "";
+document.getElementById("id_4").innerHTML = "";
+document.getElementById("id_5").innerHTML = "";
+document.getElementById("id_6").innerHTML = "";
 }
 span2.onclick = function() {
   modal2.style.display = "none";
+document.getElementById("id_1").innerHTML = "";
+document.getElementById("id_2").innerHTML = "";
+
 }
 span3.onclick = function() {
   modal3.style.display = "none";
 }
-window.onclick = function(event) {
-  if (event.target == modal) {
+window.addEventListener('click' , function(event) {
+  if (event.target == modal1) {
     modal1.style.display = "none";
   }
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
+});
+window.addEventListener('click' , function(event) {
+  if (event.target == modal2) {
     modal2.style.display = "none";
   }
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal3.style.display = "none";
-  }
-}
+});

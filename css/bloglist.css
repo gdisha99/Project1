@@ -105,18 +105,18 @@ body {
 
 #post-delete{
     width: 37%;
+    float: left;
+    border: none;
+    padding: 13px;
+    color: white;
+    background-color : red;
+   }
+
+#no-post-delete{
+    width: 37%;
     float: right;
     border: none;
     padding: 13px;
     color: white;
     background-color: limegreen;
-   }
-
-#no-post-delete{
-    width: 37%;
-    float: left;
-    border: none;
-    padding: 13px;
-    color: white;
-    background-color: orangered;
    }

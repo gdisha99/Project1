@@ -32,25 +32,26 @@ window.onclick = function(event) {
   }
 }
 
+
 //like function
 var numberOfClicks=0;
 function postLiked(){
-   var button = document.getElementById("addLike")
+   var button = document.getElementById("addLikes")
    button.innerHTML = '<i class="fa fa-thumbs-up ">'+'</i>'+'&nbsp;'+"Liked!";
    button.style.border="none";
     numberOfClicks += 1;
     if(numberOfClicks!=0){
         if (numberOfClicks==1){
-            document.getElementById('likesCount').innerHTML = numberOfClicks + " person likes this!";
+            document.getElementById('likeCount').innerHTML = numberOfClicks + " person likes this!";
         }
         else {
-            document.getElementById('likesCount').innerHTML = numberOfClicks + " people have liked this!";
+            document.getElementById('likeCount').innerHTML = numberOfClicks + " people have liked this!";
         }
         }
     }
 
 //comments function..
-function addComments(id){
+function addComment(id){
    if (id.value.length>0){
     var addEventName = id.value ;
     document.getElementById('addEventNames').innerHTML += '<p id="comment">' + addEventName + '</p>' ; 
