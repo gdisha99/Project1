@@ -39,11 +39,11 @@
             </div>
             <div class="modal-body">
                 <form>
-                    Username<br>
+                    <label for="username" class="labelText">Username</label><br>
                     <input type="text" name="username" placeholder="Enter Username" required><br>
-                    Password<br>
+                    <label for="password" class="labelText">Password</label><br>
                     <input type="password" name="password" placeholder="Enter Password" required><br>
-                    <button type="submit">Sign In</button>
+                    <button type="submit" class="signInBtn">Sign In</button>
                     <div class="signInFooter">
                         <p style="text-align: center;"><b>Not a member? <a id="sign_up" href="#" onclick="">Sign Up</a></b></p>
                     </div>
@@ -61,13 +61,13 @@
             </div>
             <div class="modal-body">
                 <form>
-                    Full Name<br>
+                    <label for="fullname" class="labelText">Full Name</label><br>
                     <input type="text" name="fullname" placeholder="Enter Full Name" required><br>
-                    Username<br>
+                    <label for="username" class="labelText">Username</label><br>
                     <input type="text" name="username" placeholder="Enter Username" required><br>
-                    Password<br>
+                    <label for="password" class="labelText">Password</label><br>
                     <input type="password" name="password" placeholder="Enter Password" required><br>
-                    Confirm Password<br>
+                    <label for="confirmpassword" class="labelText">Confirm Password</label><br>
                     <input type="password" name="confirmpass" placeholder="Confirm Password" required><br>
                     <button type="submit">Login</button>
                 </form>
@@ -75,30 +75,32 @@
         </div>
     </div>
 
-    <div id="myModal3" class="modal">
+    <div id="myModal3" class="modal" >
     	<!-- Insert code for Create Post modal here -->
-        <div class="modal-content">
+        <div id="create-post-modal" class="modal-content">
             <div class="modal-header">
                 <span class="close">&times;</span>
                 <h2>New Post</h2>
             </div>
             <div class="modal-body">
                 <form>
-                    Title<br>
+                    <label for="title" class="label-text">Title:</label><br>
                     <input type="text" name="title" placeholder="Enter Post Title" required><br>
-                    Content<br>
-                    <input type="text" name="content" placeholder="Enter Post Content" required><br>
-                    <button type="submit">Create Post</button>
+                    <label for="content" class="label-text">Content:</label><br>
+                    <textarea id="content" rows="20%" cols="50%" placeholder="Enter Content Here" style="padding: 10px; font-size: 15px;%;"></textarea>
+<!--                     <input type="text" name="content" placeholder="Enter Post Content" style=" height: 200px; width:400px; " required><br>
+ -->                    <button type="submit">Create Post</button>
                 </form>
             </div>
         </div>
-
     </div>
 
-	<!-- Place all Javascript for header in this file -->
+    <!-- 	Place all Javascript for header in this file -->
 	<script src="js\header.js"></script>
-	<!-- Place all Javascript for rest of the elements in this file -->
+    <!-- Place all Javascript for rest of the elements in this file -->
     <script src="js\index.js"></script>
 
 </body>
 </html>
+
+

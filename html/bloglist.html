@@ -29,11 +29,11 @@
             </div>
             <div class="modal-body">
                 <form>
-                    Username<br>
+                    <label for="username" class="labelText">Username</label><br>
                     <input type="text" name="username" placeholder="Enter Username" required><br>
-                    Password<br>
+                    <label for="password" class="labelText">Password</label><br>
                     <input type="password" name="password" placeholder="Enter Password" required><br>
-                    <button type="submit">Sign In</button>
+                    <button type="submit" class="signInBtn">Sign In</button>
                     <div class="signInFooter">
                         <p style="text-align: center;"><b>Not a member? <a id="sign_up" href="#" onclick="">Sign Up</a></b></p>
                     </div>
@@ -51,13 +51,13 @@
             </div>
             <div class="modal-body">
                 <form>
-                    Full Name<br>
+                    <label for="fullname" class="labelText">Full Name</label><br>
                     <input type="text" name="fullname" placeholder="Enter Full Name" required><br>
-                    Username<br>
+                    <label for="username" class="labelText">Username</label><br>
                     <input type="text" name="username" placeholder="Enter Username" required><br>
-                    Password<br>
+                    <label for="password" class="labelText">Password</label><br>
                     <input type="password" name="password" placeholder="Enter Password" required><br>
-                    Confirm Password<br>
+                    <label for="confirmpassword" class="labelText">Confirm Password</label><br>
                     <input type="password" name="confirmpass" placeholder="Confirm Password" required><br>
                     <button type="submit">Login</button>
                 </form>
@@ -189,14 +189,16 @@
             
             </div>
 
-         <div>
-
+        <div id="myModal4" class="modal_2" tabindex="-1">
             <!-- Insert code for delete modal here -->
-            
+            <div class="modal-content_2">
+                <h4>Are you sure you want to delete this post?</h4>
+                <button id="post-delete" type="submit">Yes</button>
+                <button id="no-post-delete" type="submit">No</button>           
+            </div>
         </div>
         
-</div>
-    <script src="..\js\bloglist.js">  </script>
+    <script src="..\js\bloglist.js"></script>
     <script src="..\js\header.js"> </script>
 </body>
 
