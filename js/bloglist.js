@@ -15,6 +15,7 @@ btn2.onclick = function() {
 }
 btn4.onclick = function() {
   modal1.style.display = "block";
+  modal2.style.display = "none";
 }
 bin1[0].onclick = function() {
   modal4.style.display = "block";
